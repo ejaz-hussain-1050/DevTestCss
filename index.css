@@ -1,0 +1,303 @@
+body {
+  width: 100%;
+  padding: 0px;
+  margin: 0px;
+}
+
+.content {
+  width: -webkit-fill-available;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+}
+
+.content-row {
+  display: flex;
+  width: 100%;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.items-first-column {
+  width: 100%;
+}
+
+.items-second-column {
+  width: 100%;
+}
+
+.input-border {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem;
+  min-width: 200px;
+  box-shadow: 0px 1px 3px 0px #37415129;
+  position: relative;
+}
+
+.input-border:active {
+  border: 1px solid #6b7280;
+}
+
+.input-border:hover {
+  border: 1px solid #9ca3af;
+}
+
+.input-border-normal {
+  border: 1px solid #d1d5db;
+}
+
+.input-border-disabled {
+  background-color: #f3f4f6;
+}
+
+.input-border-active {
+  border: 1px solid #6b7280;
+}
+
+.input-border-select {
+  border: 1px solid #004567;
+}
+
+.input-border-invalid {
+  border: 1px solid #dc2626;
+}
+
+.input-border-valid {
+  border: 1px solid #d1d5db;
+}
+
+.input-disabled:disabled {
+  background-color: #f3f4f6;
+}
+
+.dropdown > .dropdown-icon {
+  padding: 8px 2px;
+}
+
+.color-container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 80%;
+}
+
+.items-field-label {
+  font-family: Roboto;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 16px;
+  letter-spacing: 0.01em;
+  text-align: left;
+  padding: 4px;
+}
+
+.no-input-property {
+  border: none;
+  outline: none;
+  width: 80%;
+}
+
+.input-text-item {
+  font-family: Roboto;
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 10px;
+  letter-spacing: 0.01em;
+  text-align: left;
+  color: #374151;
+  display: flex;
+  padding: 4px;
+  margin: 2px;
+  border-radius: 3px;
+}
+
+.cross-icon {
+  padding-left: 4px;
+}
+
+.info-text {
+  font-family: Roboto;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: 0.01em;
+  text-align: left;
+}
+
+.help-text {
+  color: #6b7280;
+}
+
+.invalid-text {
+  color: red;
+}
+
+.valid-text {
+  color: #16a34a;
+}
+
+.bg-Orange {
+  background: #ffedd5;
+}
+
+.text-gray {
+  color: #374151;
+}
+
+.bg-Blue {
+  background: #dbeafe;
+}
+
+.bg-Green {
+  background: #dcfce7;
+}
+
+.bg-Red {
+  background: #fee2e2;
+}
+
+.bg-Yellow {
+  background: #fef9c3;
+}
+
+.bg-Purple {
+  background: #f3e8ff;
+}
+
+.bg-Pink {
+  background: #fce7f3;
+}
+
+.bg-Gray {
+  background: #f3f4f6;
+}
+
+.bg-gray-2 {
+  background: #e5e7eb;
+}
+
+.rotate {
+  transform: rotate(3.142rad);
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.staric {
+  color: red;
+}
+
+@media only screen and (width>=1800px) {
+  .items-first-column {
+    margin-left: 20rem;
+    margin-right: 3rem;
+  }
+  .items-second-column {
+    margin-left: 3rem;
+    margin-right: 20rem;
+  }
+}
+
+@media only screen and (876px<=width<1800px) {
+  .items-first-column {
+    margin-left: 8rem;
+    margin-right: 3rem;
+  }
+  .items-second-column {
+    margin-left: 3rem;
+    margin-right: 8rem;
+  }
+}
+
+@media only screen and (692px<=width<876px) {
+  .items-first-column {
+    margin-left: 5rem;
+    margin-right: 3rem;
+  }
+  .items-second-column {
+    margin-left: 3rem;
+    margin-right: 5rem;
+  }
+
+  .input-border {
+    padding: 4px;
+  }
+}
+
+@media only screen and (480px<=width<692px) {
+  .items-first-column {
+    margin-left: 2rem;
+    margin-right: 1rem;
+  }
+  .items-second-column {
+    margin-left: 1rem;
+    margin-right: 2rem;
+  }
+}
+
+@media only screen and (480px>=width) {
+  .items-first-column {
+    margin-bottom: 2rem;
+  }
+  .items-second-column {
+    margin: 2rem;
+  }
+
+  .content-row {
+    flex-direction: column;
+  }
+
+  .input-border {
+    max-width: 300px;
+  }
+}
+
+.color-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.no-button-property {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  display: none;
+}
+
+.dummy-holder {
+  display: none;
+}
+
+.dropdown {
+  display: flex;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  right: 0;
+}
+
+.dropdown-content label {
+  display: block;
+  padding: 8px;
+  cursor: pointer;
+}
+
+.dropdown-content label:hover {
+  background-color: #ddd;
+}
+
+.dropdown-content input {
+  margin-right: 8px;
+}
+
+.dropdown-icon {
+  cursor: pointer;
+}
