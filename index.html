@@ -1,0 +1,881 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>&lt;my-element> Demo</title>
+    <link rel="stylesheet" href="index.css" />
+
+    <style>
+      p {
+        border: solid 1px blue;
+        padding: 8px;
+      }
+    </style>
+  </head>
+  <body class="overflow-visible">
+    <div class="content">
+      <div class="content-row">
+        <div class="items-first-column">
+          <div class="items-field-label">
+            Select values <sup class="staric">*</sup>
+          </div>
+          <div class="input-border input-border-normal">
+            <input
+              class="no-input-property dummy-holder"
+              placeholder="Placeholder"
+              id="placeholder_0"
+            />
+
+            <div class="color-container" id="selectedColorsContainer_0"></div>
+
+            <div class="dropdown">
+              <button
+                onclick="deleteAll(0)"
+                class="no-button-property"
+                id="delAllButton0"
+              >
+                <img src="./icons/deleteIcon.png" />
+              </button>
+
+              <img
+                src="./icons/dropDownIcon.png"
+                class="dropdown-icon"
+                onclick="toggleDropdown('dropdown0')"
+              />
+
+              <div id="dropdown0" class="dropdown-content">
+                <label
+                  ><input
+                    type="checkbox"
+                    value="Orange"
+                    onclick="handleCheckbox('1','Orange')"
+                  />Orange</label
+                >
+                <label
+                  ><input
+                    type="checkbox"
+                    value="Green"
+                    onclick="handleCheckbox('1','Green')"
+                  />Green</label
+                >
+                <label
+                  ><input
+                    type="checkbox"
+                    value="Red"
+                    onclick="handleCheckbox('1','Red')"
+                  />Red</label
+                >
+                <label
+                  ><input
+                    type="checkbox"
+                    value="Yellow"
+                    onclick="handleCheckbox('1','Yellow')"
+                  />Yellow</label
+                >
+                <label
+                  ><input
+                    type="checkbox"
+                    value="Blue"
+                    onclick="handleCheckbox('1','Blue')"
+                  />Blue</label
+                >
+                <label
+                  ><input
+                    type="checkbox"
+                    value="Purple"
+                    onclick="handleCheckbox('1','Purple')"
+                  />Purple</label
+                >
+                <label
+                  ><input
+                    type="checkbox"
+                    value="Pink"
+                    onclick="handleCheckbox('1','Pink')"
+                  />Pink</label
+                >
+                <label
+                  ><input
+                    type="checkbox"
+                    value="Gray"
+                    onclick="handleCheckbox('1','Gray')"
+                  />Gray</label
+                >
+              </div>
+            </div>
+          </div>
+          <div class="info-text help-text">
+            Help or intruction text goes here
+          </div>
+        </div>
+        <div class="items-second-column">
+          <div class="items-field-label">
+            Select values <sup class="staric">*</sup>
+          </div>
+          <div class="input-border input-border-normal">
+            <input
+              class="no-input-property dummy-holder"
+              placeholder="Placeholder"
+              id="placeholder_1"
+            />
+
+            <div class="color-container" id="selectedColorsContainer_1"></div>
+
+            <div class="dropdown">
+              <button
+                onclick="deleteAll(1)"
+                class="no-button-property"
+                id="delAllButton1"
+              >
+                <img src="./icons/deleteIcon.png" />
+              </button>
+              <img
+                src="./icons/dropDownIcon.png"
+                class="dropdown-icon"
+                onclick="toggleDropdown('dropdown1')"
+              />
+              <div id="dropdown1" class="dropdown-content">
+                <label
+                  ><input
+                    type="checkbox"
+                    value="Orange"
+                    onclick="handleCheckbox('2','Orange')"
+                  />Orange</label
+                >
+                <label
+                  ><input
+                    type="checkbox"
+                    value="Green"
+                    onclick="handleCheckbox('2','Green')"
+                  />Green</label
+                >
+                <label
+                  ><input
+                    type="checkbox"
+                    value="Red"
+                    onclick="handleCheckbox('2','Red')"
+                  />Red</label
+                >
+                <label
+                  ><input
+                    type="checkbox"
+                    value="Yellow"
+                    onclick="handleCheckbox('2','Yellow')"
+                  />Yellow</label
+                >
+                <label
+                  ><input
+                    type="checkbox"
+                    value="Blue"
+                    onclick="handleCheckbox('2','Blue')"
+                  />Blue</label
+                >
+                <label
+                  ><input
+                    type="checkbox"
+                    value="Purple"
+                    onclick="handleCheckbox('2','Purple')"
+                  />Purple</label
+                >
+                <label
+                  ><input
+                    type="checkbox"
+                    value="Pink"
+                    onclick="handleCheckbox('2','Pink')"
+                  />Pink</label
+                >
+                <label
+                  ><input
+                    type="checkbox"
+                    value="Gray"
+                    onclick="handleCheckbox('2','Gray')"
+                  />Gray</label
+                >
+              </div>
+            </div>
+          </div>
+          <div class="info-text help-text">
+            Help or intruction text goes here
+          </div>
+        </div>
+      </div>
+      <div class="content-row">
+        <div class="items-first-column">
+          <div class="items-field-label">
+            Select values <sup class="staric">*</sup>
+          </div>
+          <div class="input-border input-border-active">
+            <input
+              class="no-input-property dummy-holder"
+              placeholder="Placeholder"
+              id="placeholder_2"
+            />
+
+            <div class="color-container" id="selectedColorsContainer_2"></div>
+
+            <div class="dropdown">
+              <button
+                onclick="deleteAll(2)"
+                class="no-button-property"
+                id="delAllButton2"
+              >
+                <img src="./icons/deleteIcon.png" />
+              </button>
+              <img
+                src="./icons/dropDownIcon.png"
+                class="dropdown-icon"
+                onclick="toggleDropdown('dropdown2')"
+              />
+              <div id="dropdown2" class="dropdown-content">
+                <label
+                  ><input
+                    type="checkbox"
+                    value="Orange"
+                    onclick="handleCheckbox('3','Orange')"
+                  />Orange</label
+                >
+                <label
+                  ><input
+                    type="checkbox"
+                    value="Green"
+                    onclick="handleCheckbox('3','Green')"
+                  />Green</label
+                >
+                <label
+                  ><input
+                    type="checkbox"
+                    value="Red"
+                    onclick="handleCheckbox('3','Red')"
+                  />Red</label
+                >
+                <label
+                  ><input
+                    type="checkbox"
+                    value="Yellow"
+                    onclick="handleCheckbox('3','Yellow')"
+                  />Yellow</label
+                >
+                <label
+                  ><input
+                    type="checkbox"
+                    value="Blue"
+                    onclick="handleCheckbox('3','Blue')"
+                  />Blue</label
+                >
+                <label
+                  ><input
+                    type="checkbox"
+                    value="Purple"
+                    onclick="handleCheckbox('3','Purple')"
+                  />Purple</label
+                >
+                <label
+                  ><input
+                    type="checkbox"
+                    value="Pink"
+                    onclick="handleCheckbox('3','Pink')"
+                  />Pink</label
+                >
+                <label
+                  ><input
+                    type="checkbox"
+                    value="Gray"
+                    onclick="handleCheckbox('3','Gray')"
+                  />Gray</label
+                >
+              </div>
+            </div>
+          </div>
+          <div class="info-text help-text">
+            Help or intruction text goes here
+          </div>
+        </div>
+        <div class="items-second-column">
+          <div class="items-field-label">Label</div>
+          <div class="input-border input-border-active">
+            <input
+              class="no-input-property dummy-holder"
+              placeholder="Placeholder"
+              id="placeholder_3"
+            />
+
+            <div class="color-container" id="selectedColorsContainer_3"></div>
+
+            <div class="dropdown">
+              <button
+                onclick="deleteAll(3)"
+                class="no-button-property"
+                id="delAllButton3"
+              >
+                <img src="./icons/deleteIcon.png" />
+              </button>
+              <img
+                src="./icons/dropDownIcon.png"
+                class="dropdown-icon"
+                onclick="toggleDropdown('dropdown3')"
+              />
+              <div id="dropdown3" class="dropdown-content">
+                <label
+                  ><input
+                    type="checkbox"
+                    value="Orange"
+                    onclick="handleCheckbox('4','Orange')"
+                  />Orange</label
+                >
+                <label
+                  ><input
+                    type="checkbox"
+                    value="Green"
+                    onclick="handleCheckbox('4','Green')"
+                  />Green</label
+                >
+                <label
+                  ><input
+                    type="checkbox"
+                    value="Red"
+                    onclick="handleCheckbox('4','Red')"
+                  />Red</label
+                >
+                <label
+                  ><input
+                    type="checkbox"
+                    value="Yellow"
+                    onclick="handleCheckbox('4','Yellow')"
+                  />Yellow</label
+                >
+                <label
+                  ><input
+                    type="checkbox"
+                    value="Blue"
+                    onclick="handleCheckbox('4','Blue')"
+                  />Blue</label
+                >
+                <label
+                  ><input
+                    type="checkbox"
+                    value="Purple"
+                    onclick="handleCheckbox('4','Purple')"
+                  />Purple</label
+                >
+                <label
+                  ><input
+                    type="checkbox"
+                    value="Pink"
+                    onclick="handleCheckbox('4','Pink')"
+                  />Pink</label
+                >
+                <label
+                  ><input
+                    type="checkbox"
+                    value="Gray"
+                    onclick="handleCheckbox('4','Gray')"
+                  />Gray</label
+                >
+              </div>
+            </div>
+          </div>
+          <div class="info-text help-text">
+            Help or intruction text goes here
+          </div>
+        </div>
+      </div>
+      <div class="content-row">
+        <div class="items-first-column">
+          <div class="items-field-label">
+            Select values <sup class="staric">*</sup>
+          </div>
+          <div class="input-border input-border-select">
+            <input
+              class="no-input-property dummy-holder"
+              placeholder="Placeholder"
+              id="placeholder_4"
+            />
+
+            <div class="color-container" id="selectedColorsContainer_4"></div>
+
+            <div class="dropdown">
+              <button
+                onclick="deleteAll(4)"
+                class="no-button-property"
+                id="delAllButton4"
+              >
+                <img src="./icons/deleteIcon.png" />
+              </button>
+              <img
+                src="./icons/dropDownIcon.png"
+                class="dropdown-icon"
+                onclick="toggleDropdown('dropdown4')"
+              />
+              <div id="dropdown4" class="dropdown-content">
+                <label
+                  ><input
+                    type="checkbox"
+                    value="Orange"
+                    onclick="handleCheckbox('5','Orange')"
+                  />Orange</label
+                >
+                <label
+                  ><input
+                    type="checkbox"
+                    value="Green"
+                    onclick="handleCheckbox('5','Green')"
+                  />Green</label
+                >
+                <label
+                  ><input
+                    type="checkbox"
+                    value="Red"
+                    onclick="handleCheckbox('5','Red')"
+                  />Red</label
+                >
+                <label
+                  ><input
+                    type="checkbox"
+                    value="Yellow"
+                    onclick="handleCheckbox('5','Yellow')"
+                  />Yellow</label
+                >
+                <label
+                  ><input
+                    type="checkbox"
+                    value="Blue"
+                    onclick="handleCheckbox('5','Blue')"
+                  />Blue</label
+                >
+                <label
+                  ><input
+                    type="checkbox"
+                    value="Purple"
+                    onclick="handleCheckbox('5','Purple')"
+                  />Purple</label
+                >
+                <label
+                  ><input
+                    type="checkbox"
+                    value="Pink"
+                    onclick="handleCheckbox('5','Pink')"
+                  />Pink</label
+                >
+                <label
+                  ><input
+                    type="checkbox"
+                    value="Gray"
+                    onclick="handleCheckbox('5','Gray')"
+                  />Gray</label
+                >
+              </div>
+            </div>
+          </div>
+          <div class="info-text help-text">
+            Help or intruction text goes here
+          </div>
+        </div>
+        <div class="items-second-column">
+          <div class="items-field-label">
+            Select values <sup class="staric">*</sup>
+          </div>
+          <div class="input-border input-border-select">
+            <div class="color-container">
+              <div class="bg-Orange input-text-item">
+                <div>Orange</div>
+                <img src="./icons/clearIcon.png" class="cross-icon" />
+              </div>
+              <div class="bg-Green input-text-item">
+                <div>Green</div>
+                <img src="./icons/clearIcon.png" class="cross-icon" />
+              </div>
+              <div class="bg-Red input-text-item">
+                <div>Red</div>
+                <img src="./icons/clearIcon.png" class="cross-icon" />
+              </div>
+              <div class="bg-Yellow input-text-item">
+                <div>Yellow</div>
+                <img src="./icons/clearIcon.png" class="cross-icon" />
+              </div>
+              <div class="bg-Blue input-text-item">
+                <div>Blue</div>
+                <img src="./icons/clearIcon.png" class="cross-icon" />
+              </div>
+              <div class="bg-Purple input-text-item">
+                <div>Purple</div>
+                <img src="./icons/clearIcon.png" class="cross-icon" />
+              </div>
+              <div class="bg-Green input-text-item">
+                <div>Green</div>
+                <img src="./icons/clearIcon.png" class="cross-icon" />
+              </div>
+              <div class="bg-Pink input-text-item">
+                <div>Pink</div>
+                <img src="./icons/clearIcon.png" class="cross-icon" />
+              </div>
+              <div class="bg-Gray input-text-item">
+                <div>Gray</div>
+                <img src="./icons/clearIcon.png" class="cross-icon" />
+              </div>
+            </div>
+
+            <div class="icons">
+              <img src="./icons/deleteIcon.png" class="del-icon" />
+              <img
+                src="./icons/dropDownIcon.png"
+                class="dropdown-icon rotate"
+              />
+            </div>
+          </div>
+          <div class="info-text help-text">
+            Help or intruction text goes here
+          </div>
+        </div>
+      </div>
+      <div class="content-row">
+        <div class="items-first-column">
+          <div class="items-field-label">
+            Select values <sup class="staric">*</sup>
+          </div>
+          <div class="input-border input-border-invalid">
+            <input class="no-input-property" placeholder="Placeholder" />
+            <div>
+              <img src="./icons/dropDownIcon.png" class="dropdown-icon" />
+            </div>
+          </div>
+          <div class="info-text invalid-text">
+            Help or intruction text goes here
+          </div>
+        </div>
+        <div class="items-second-column">
+          <div class="items-field-label">
+            Select values <sup class="staric">*</sup>
+          </div>
+          <div class="input-border input-border-invalid">
+            <div class="color-container">
+              <div class="bg-orange input-text-item">
+                <div>Orange</div>
+                <img src="./icons/clearIcon.png" class="cross-icon" />
+              </div>
+              <div class="bg-green input-text-item">
+                <div>Green</div>
+                <img src="./icons/clearIcon.png" class="cross-icon" />
+              </div>
+              <div class="bg-red input-text-item">
+                <div>Red</div>
+                <img src="./icons/clearIcon.png" class="cross-icon" />
+              </div>
+              <div class="bg-yellow input-text-item">
+                <div>Yellow</div>
+                <img src="./icons/clearIcon.png" class="cross-icon" />
+              </div>
+              <div class="bg-blue input-text-item">
+                <div>Blue</div>
+                <img src="./icons/clearIcon.png" class="cross-icon" />
+              </div>
+              <div class="bg-purple input-text-item">
+                <div>Purple</div>
+                <img src="./icons/clearIcon.png" class="cross-icon" />
+              </div>
+              <div class="bg-green input-text-item">
+                <div>Green</div>
+                <img src="./icons/clearIcon.png" class="cross-icon" />
+              </div>
+              <div class="bg-pink input-text-item">
+                <div>Pink</div>
+                <img src="./icons/clearIcon.png" class="cross-icon" />
+              </div>
+              <div class="bg-gray input-text-item">
+                <div>Gray</div>
+                <img src="./icons/clearIcon.png" class="cross-icon" />
+              </div>
+            </div>
+            <div class="icons">
+              <img src="./icons/deleteIcon.png" class="del-icon" />
+
+              <img src="./icons/dropDownIcon.png" class="dropdown-icon" />
+            </div>
+          </div>
+          <div class="info-text invalid-text">
+            Help or intruction text goes here
+          </div>
+        </div>
+      </div>
+      <div class="content-row">
+        <div class="items-first-column">
+          <div class="items-field-label">
+            Select values <sup class="staric">*</sup>
+          </div>
+          <div class="input-border input-border-valid">
+            <input class="no-input-property" placeholder="Placeholder" />
+            <div>
+              <img src="./icons/dropDownIcon.png" class="dropdown-icon" />
+            </div>
+          </div>
+          <div class="info-text valid-text">
+            Help or intruction text goes here
+          </div>
+        </div>
+        <div class="items-second-column">
+          <div class="items-field-label">
+            Select values <sup class="staric">*</sup>
+          </div>
+          <div class="input-border input-border-valid">
+            <div class="color-container">
+              <div class="bg-Orange input-text-item">
+                <div>Orange</div>
+                <img src="./icons/clearIcon.png" class="cross-icon" />
+              </div>
+              <div class="bg-Green input-text-item">
+                <div>Green</div>
+                <img src="./icons/clearIcon.png" class="cross-icon" />
+              </div>
+              <div class="bg-Red input-text-item">
+                <div>Red</div>
+                <img src="./icons/clearIcon.png" class="cross-icon" />
+              </div>
+              <div class="bg-Yellow input-text-item">
+                <div>Yellow</div>
+                <img src="./icons/clearIcon.png" class="cross-icon" />
+              </div>
+              <div class="bg-Blue input-text-item">
+                <div>Blue</div>
+                <img src="./icons/clearIcon.png" class="cross-icon" />
+              </div>
+              <div class="bg-Purple input-text-item">
+                <div>Purple</div>
+                <img src="./icons/clearIcon.png" class="cross-icon" />
+              </div>
+              <div class="bg-Green input-text-item">
+                <div>Green</div>
+                <img src="./icons/clearIcon.png" class="cross-icon" />
+              </div>
+              <div class="bg-Pink input-text-item">
+                <div>Pink</div>
+                <img src="./icons/clearIcon.png" class="cross-icon" />
+              </div>
+              <div class="bg-Gray input-text-item">
+                <div>Gray</div>
+                <img src="./icons/clearIcon.png" class="cross-icon" />
+              </div>
+            </div>
+            <div class="icons">
+              <img
+                src="./icons/deleteIcon.png"
+                class="del-icon"
+                class="del-icon"
+              />
+
+              <img
+                src="./icons/dropDownIcon.png"
+                class="dropdown-icon"
+                class="dropdown-icon"
+              />
+            </div>
+          </div>
+          <div class="info-text valid-text">
+            Help or intruction text goes here
+          </div>
+        </div>
+      </div>
+      <div class="content-row">
+        <div class="items-first-column">
+          <div class="items-field-label">
+            Select values <sup class="staric">*</sup>
+          </div>
+          <div class="input-border input-border-disabled">
+            <input
+              class="no-input-property input-disabled"
+              disabled
+              placeholder="Placeholder"
+            />
+            <div>
+              <img
+                src="./icons/dropDownIcon.png"
+                class="dropdown-icon"
+                class="dropdown-icon"
+              />
+            </div>
+          </div>
+          <div class="info-text help-text">
+            Help or intruction text goes here
+          </div>
+        </div>
+        <div class="items-second-column">
+          <div class="items-field-label">
+            Select values <sup class="staric">*</sup>
+          </div>
+          <div class="input-border input-border-disabled">
+            <div class="color-container">
+              <div class="bg-gray-2 input-text-item">
+                <div>Orange</div>
+                <img src="./icons/clearIcon.png" class="cross-icon" />
+              </div>
+              <div class="bg-gray-2 input-text-item">
+                <div>Green</div>
+                <img src="./icons/clearIcon.png" class="cross-icon" />
+              </div>
+              <div class="bg-gray-2 input-text-item">
+                <div>Red</div>
+                <img src="./icons/clearIcon.png" class="cross-icon" />
+              </div>
+              <div class="bg-gray-2 input-text-item">
+                <div>Yellow</div>
+                <img src="./icons/clearIcon.png" class="cross-icon" />
+              </div>
+              <div class="bg-gray-2 input-text-item">
+                <div>Blue</div>
+                <img src="./icons/clearIcon.png" class="cross-icon" />
+              </div>
+              <div class="bg-gray-2 input-text-item">
+                <div>Purple</div>
+                <img src="./icons/clearIcon.png" class="cross-icon" />
+              </div>
+              <div class="bg-gray-2 input-text-item">
+                <div>Green</div>
+                <img src="./icons/clearIcon.png" class="cross-icon" />
+              </div>
+              <div class="bg-gray-2 input-text-item">
+                <div>Pink</div>
+                <img src="./icons/clearIcon.png" class="cross-icon" />
+              </div>
+              <div class="bg-gray-2 input-text-item">
+                <div>Gray</div>
+                <img src="./icons/clearIcon.png" class="cross-icon" />
+              </div>
+            </div>
+          </div>
+          <div class="info-text help-text">
+            Help or intruction text goes here
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+
+  <script>
+    // Initialize selected colors arrays for each dropdown
+    var selectedColorsArrays = [
+      [],
+      [],
+      [],
+      ["Orange", "Purple", "Red", "Blue", "Yellow", "Gray"],
+      ["Orange", "Purple"],
+    ];
+    var ColorsArray = [
+      "Orange",
+      "Gray",
+      "Purple",
+      "Green",
+      "Yellow",
+      "Blue",
+      "Pink",
+      "Red",
+    ];
+
+    // Function to initialize selected colors on page load
+    function initializeSelectedColors(dropdownId) {
+      var selectedColorsContainer = document.getElementById(
+        "selectedColorsContainer_" + dropdownId
+      );
+      var selectedColorsArray = selectedColorsArrays[dropdownId];
+
+      selectedColorsContainer.innerHTML = "";
+      var delButton = document.getElementById("delAllButton" + dropdownId);
+
+      if (selectedColorsArray.length === 8) {
+        delButton.style.display = "block";
+      } else {
+        delButton.style.display = "none";
+      }
+
+      var dummyHolder = document.getElementById("placeholder_" + dropdownId);
+
+      if (selectedColorsArray.length > 0) {
+        dummyHolder.style.display = "none";
+      } else {
+        dummyHolder.style.display = "block";
+      }
+      ColorsArray.forEach((color) => {
+        if (selectedColorsArray.find((c) => c === color)) {
+          var colorItem = document.createElement("div");
+          colorItem.className = "bg-" + color + " input-text-item";
+          colorItem.innerHTML =
+            "<div>" +
+            color +
+            '</div><img src="./icons/clearIcon.png" class="cross-icon" onclick="removeColor(\'' +
+            dropdownId +
+            "', '" +
+            color +
+            "')\">";
+          selectedColorsContainer.appendChild(colorItem);
+          var checkbox = document.querySelector(
+            "#dropdown" + dropdownId + ' input[value="' + color + '"]'
+          );
+          if (checkbox) {
+            checkbox.checked = true;
+          }
+        } else {
+          var checkbox = document.querySelector(
+            "#dropdown" + dropdownId + ' input[value="' + color + '"]'
+          );
+          if (checkbox) {
+            checkbox.checked = false;
+          }
+        }
+      });
+    }
+
+    // Call the initialize function for each dropdown on page load
+    for (var i = 0; i < 6; i++) {
+      initializeSelectedColors(i);
+    }
+
+    function toggleDropdown(dropdownId) {
+      var dropdown = document.getElementById(dropdownId);
+      dropdown.style.display =
+        dropdown.style.display === "block" ? "none" : "block";
+    }
+
+    function handleCheckbox(dropdownId, color) {
+      const index = Number(dropdownId) - 1;
+      var selectedColorsContainer = document.getElementById(
+        "selectedColorsContainer_" + index
+      );
+      var existingColorItem = document.querySelector(
+        "#selectedColorsContainer_" + index + ">.bg-" + color
+      );
+
+      if (existingColorItem) {
+        existingColorItem.remove();
+        // Remove the color from the array
+        selectedColorsArrays[index] = selectedColorsArrays[index].filter(
+          function (item) {
+            return item !== color;
+          }
+        );
+        initializeSelectedColors(index);
+      } else {
+        selectedColorsArrays[index].push(color);
+        initializeSelectedColors(index);
+      }
+    }
+
+    function removeColor(dropdownId, color) {
+      var existingColorItem = document.querySelector(
+        "#selectedColorsContainer_" + dropdownId + ">.bg-" + color
+      );
+      existingColorItem.remove();
+      // Remove the color from the array
+      selectedColorsArrays[dropdownId] = selectedColorsArrays[
+        dropdownId
+      ].filter(function (item) {
+        return item !== color;
+      });
+      initializeSelectedColors(dropdownId);
+      // Uncheck the corresponding checkbox
+    }
+
+    function deleteAll(dropdownId) {
+      selectedColorsArrays[dropdownId] = [];
+      initializeSelectedColors(dropdownId);
+    }
+  </script>
+</html>
